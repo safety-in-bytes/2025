@@ -35,12 +35,17 @@ export const CallForParticipation = () => {
         const requestBody = {
             captcha: turnstileToken,
             emailAddress: email,
-            name: 'Safety in Bytes',
-            message
+            name: name,
+            message,
+            email,
+            topic,
+            abstract,
+            exercise,
+            content
         }
         const response =
-            await new Axios({headers: {"Content-Type": "application/json"}}).post('https://backend.jonas-thelemann.de/api/contact', JSON.stringify(requestBody));
-        if(response.status === 200) {
+            await new Axios({headers: {"Content-Type": "application/json"}}).post('http://localhost:3001/api/speakerSubmission', JSON.stringify(requestBody));
+        if(response.status === 200 || response.status == 201) {
             await Swal.fire({
                 title: "Formular gesendet!",
                 icon: "success"
@@ -62,7 +67,23 @@ export const CallForParticipation = () => {
 
     return (
         <div className="flex justify-center">
-            <div className="my-8 w-1/2 flex flex-col gap-10 justify-center">
+            <div className="my-8 w-full max-w-4xl flex flex-col gap-10 justify-center px-4">
+                
+                {/* Intro/Info Box */}
+                <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-900 p-6 rounded-md shadow">
+                    <h2 className="text-2xl font-bold mb-2">Jetzt Beiträge einreichen!</h2>
+                    <p className="mb-2">
+                        Wir befinden uns aktuell in der <strong>Call for Participation</strong>-Phase von <em>Safety in Bytes</em>.
+                    </p>
+                    <p className="mb-2">
+                        Die vollständige Agenda wird noch bekannt gegeben. Jetzt ist die perfekte Gelegenheit, deinen Workshop oder Beitrag vorzuschlagen!
+                    </p>
+                    <p>
+                        Einfach das folgende Formular ausfüllen und einreichen – wir freuen uns auf deine Ideen.
+                    </p>
+                </div>
+
+                {/* Formular */}
                 <div className="flex justify-center">
                     <p className="text-center font-bold text-5xl leading-relaxed sm:leading-none">Call for <span
                         className="p-2 text-white rounded-xl bg-gradient-to-r from-purple-500 to-pink-500">Participation</span>
