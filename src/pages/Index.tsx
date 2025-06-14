@@ -13,7 +13,7 @@ export const Index = () => {
                     </p>
                     <div className="mt-4 flex gap-4 px-12 lg:p-0">
                         <Link to="/speaker" className="text-white p-2 text-xl rounded-md bg-gradient-to-r from-purple-500 to-pink-500">
-                            Speaker
+                            Speaker letztes Jahr (2024)
                         </Link>
                         <Link to="/call-for-participation" className="text-white p-2 text-xl rounded-md bg-gradient-to-r from-purple-500 to-pink-500">
                             Jetzt mitmachen!
