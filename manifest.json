@@ -1,0 +1,9 @@
+{
+  "short_name": "Safety in Bytes",
+  "name": "Safety in Bytes",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
