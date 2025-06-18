@@ -44,7 +44,7 @@ export const CallForParticipation = () => {
             content
         }
         const response =
-            await new Axios({headers: {"Content-Type": "application/json"}}).post('http://localhost:3001/api/speakerSubmission', JSON.stringify(requestBody));
+            await new Axios({headers: {"Content-Type": "application/json"}}).post('https://api.nghiavu.de/api/speakerSubmission', JSON.stringify(requestBody));
         if(response.status === 200 || response.status == 201) {
             await Swal.fire({
                 title: "Formular gesendet!",
