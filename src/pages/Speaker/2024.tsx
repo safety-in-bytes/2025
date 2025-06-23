@@ -3,7 +3,7 @@ export const Speaker = () => {
         <div className="flex justify-center">
             <div className="my-8 xl:w-1/2 flex flex-col gap-11 justify-center items-center">
                 <p className="text-center font-bold text-5xl p-2 text-white rounded-xl bg-gradient-to-r from-purple-500 to-pink-500">
-                    Speaker
+                    Speaker letztes Jahr (2024)
                 </p>
 
                 <div className="flex flex-col lg:flex-row bg-gray-200 gap-2 w-full items-center">

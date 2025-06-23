@@ -12,7 +12,7 @@ export const Index = () => {
                     Dein Workshop auf dem Informatik Festival 2025: IT-Security am Puls der Zeit. Für junge Menschen – mit Top-Speakern aus Wirtschaft, Politik und Wissenschaft. Termin und Speaker folgen!
                     </p>
                     <div className="mt-4 flex gap-4 px-12 lg:p-0">
-                        <Link to="/speaker" className="text-white p-2 text-xl rounded-md bg-gradient-to-r from-purple-500 to-pink-500">
+                        <Link to="/speaker/2024" className="text-white p-2 text-xl rounded-md bg-gradient-to-r from-purple-500 to-pink-500">
                             Speaker letztes Jahr (2024)
                         </Link>
                         <Link to="/call-for-participation" className="text-white p-2 text-xl rounded-md bg-gradient-to-r from-purple-500 to-pink-500">
